@@ -1,0 +1,239 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #000000;
+}
+
+/* Header */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    background: white;
+    
+}
+
+.logo {
+    padding:  5px 15px ;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.btn-outline {
+    background: none;
+    border: 2px solid #ff52bf;
+    color: #ff52bf;
+    margin: 25px 20px;
+    padding: 0px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+/* Hero Section */
+.hero {
+    padding: 50px 20px;
+}
+.hero h1{
+    font-weight:900;
+    font-size: 45px;
+}
+.hero p{
+    margin:  40px;
+padding: 0px 22vw;
+font-size: 18px;
+}
+.hero img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.btn-primary {
+    background: #f577c7;
+    color: white;
+    padding: 20px 30px;
+    border: none;
+    box-shadow: 2px 2px 2px rgb(174, 172, 172),-2px 0px 2px rgb(174, 172, 172);
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 350px;
+}
+
+/* Stats */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 40px 20px;
+}
+
+.stats div {
+    text-align: left;
+}
+.stat_head{
+    font-size: 85px;
+    font-weight: 700;
+    margin: 0;
+}
+.stat_subhead{
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+    color:grey;
+}
+
+/* Features Section */
+.features {
+    /* display: flex; */
+    /* flex-direction: row; */
+    align-items: center;
+    gap: 40px;
+    padding: 50px 20px;
+}
+.feature1{
+    margin: 5px 40px;
+    display: flex; 
+    flex-direction: row;
+    padding: 50px 20px;
+    max-height: 400px;
+    justify-content: center;
+}
+.feature2{
+    margin: 5px 40px;
+    display: flex; 
+    flex-direction: row;
+    padding: 50px 20px;
+    justify-content: center;
+}
+.feature_img {
+    max-height:450px ;
+    object-fit: fit;
+    max-width: 450px;
+}
+.feature_img img {
+max-height:450px ;
+    object-fit: fit;
+}
+.feature_content{
+    max-width: 500px;
+    padding: 50px 0px;
+}
+
+/* Call to Action */
+.cta {
+    background: white;
+    color: black;
+    padding: 50px 20px;
+}
+.cta h1{
+     font-weight:800;
+    font-size: 45px;
+}
+.banner{
+    
+    height: 280px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+}
+.banner .waves{
+    background: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left:0;
+}
+/* Footer */
+footer {background: #00252e;
+    color: white;
+    padding: 0px 20px;
+    text-align: left;
+}
+
+.footer-content {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-info {
+    /* background: #00252e; */
+    margin-bottom: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 500px;
+}
+.newsletter {
+    /* background: #00252e; */
+     margin-left: 100px;
+    margin-bottom: 40px;
+    margin-right: 100px;
+    width: 500px;
+}
+.footer-info h1{
+    font-size: 50px;
+    font-weight: 800;
+}
+
+input[type="email"] {
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-subscribe {
+    background: #ff52bf;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width:620px) {
+    .stats{
+    flex-direction: column;
+        align-items: center;
+    }
+     .feature1 {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }.feature2 {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .newsletter {
+    /* background: #00252e; */
+    margin-bottom: 20px;
+    margin-right: 0px;
+    margin-left: 30px;
+    width: 500px;
+    justify-content: center;}
+    .footer-content {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+    /* .banner{
+        height: 0px;
+       
+    } */
+    /* .footer{
+        background-color: white;
+         background:url(./image/footer_bg_large.svg);
+        
+        color: white;
+    padding: 0px 20px;
+    text-align: left;
+    } */
+}
