@@ -9,24 +9,24 @@
 // // // console.log(a);
 
 // // //setInterval
-// // function two(){
-// //     return 2;
-// // }
-// // function four(){
-// //     return 4;
-// // }
-// // console.log(1);
-// // console.log(two());
-// // setInterval(()=>{
-// //     console.log(3)
+// function two(){
+//     return 2;
+// }
+// function four(){
+//     return 4;
+// }
+// console.log(1);
+// console.log(two());
+// setTimeout(()=>{
+//     console.log(3)
 
-// // },3000)
-// // console.log(four());
-// // setInterval(()=>{
-// //     console.log(5)
+// },3000)
+// console.log(four());
+// setTimeout(()=>{
+//     console.log(5)
 
-// // },5000)
-// // console.log(6)
+// },5000)
+// console.log(6)
 
 
 
@@ -103,18 +103,21 @@
 
 
 
-function counter(){
-    var count=0;
-    this.increment=function(){
-        count++;
-        console.log(count);
-    }
-    this.decrement=function(){
-        count--;
-    console.log(count);
-}
-}
-var counter1=new counter();
-counter1.increment();
-counter1.decrement();
-counter1.increment();
+// function counter(){
+//     var count=0;
+//     this.increment=function(){
+//         count++;
+//         console.log(count);
+//     }
+//     this.decrement=function(){
+//         count--;
+//     console.log(count);
+// }
+// }
+// var counter1=new counter();
+// counter1.increment();
+// counter1.decrement();
+// counter1.increment();
+
+// /////////////////////////////
+
